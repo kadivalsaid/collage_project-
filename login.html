@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Creanive</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .login-container {
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #1a1a2e;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .login-title {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ff4c9b;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background-color: #2a2a3a;
+      color: #fff;
+    }
+    .form-group input:focus {
+      outline: none;
+      border-color: #ff4c9b;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 1rem;
+      background-color: #ff4c9b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .login-btn:hover {
+      background-color: #ff2d8a;
+    }
+    .forgot-password {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .forgot-password a {
+      color: #ff4c9b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Alight Motion</div>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="login-container">
+    <h1 class="login-title">Login to Your Account</h1>
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Enterb the username">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Enter the Email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Enter the password">
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alight Motion | Follow us on 
+      <a href="https://www.instagram.com/tera_bhai_said?igsh=bHpvdWhsaXd1cW45">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      if (username && email && password) {
+        window.location.href = 'website.html';
+      }
+      return false;
+    }
+  </script>
+</body>
+</html> 

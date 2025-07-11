@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download - Alight Motion</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .download-section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .download-title {
+      font-size: 2.5rem;
+      color: #ff4c9b;
+      margin-bottom: 1rem;
+    }
+    .download-text {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .download-options {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .download-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background-color: #ff4c9b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #ff2d8a;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .feature-card {
+      background: #1a1a2e;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .feature-card h3 {
+      color: #ff4c9b;
+      margin-bottom: 1rem;
+    }
+    .feature-card p {
+      color: #ccc;
+    }
+    .version-info {
+      margin: 1.5rem 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .version-badge {
+      background: #ff4c9b;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .release-date {
+      color: #ccc;
+    }
+    .version-notes {
+      margin-top: 2rem;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .version-notes h3 {
+      color: #ff4c9b;
+      margin-bottom: 1rem;
+    }
+    .version-notes ul {
+      color: #ccc;
+      list-style-type: none;
+      padding: 0;
+    }
+    .version-notes li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .version-notes li:before {
+      content: "•";
+      color: #ff4c9b;
+      position: absolute;
+      left: 0;
+    }
+    .version-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .version-card {
+      background: #1a1a2e;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .version-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .version-badge {
+      background: #ff4c9b;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+    .release-date {
+      color: #ccc;
+    }
+    .version-notes {
+      margin: 1rem 0;
+    }
+    .version-notes h3 {
+      color: #ff4c9b;
+      margin-bottom: 0.5rem;
+    }
+    .version-notes ul {
+      color: #ccc;
+      list-style-type: none;
+      padding: 0;
+    }
+    .version-notes li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .version-notes li:before {
+      content: "•";
+      color: #ff4c9b;
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Alight Motion</div>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="download.html" class="active">Download</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="download-section">
+    <h1 class="download-title">Download Alight Motion</h1>
+    <p class="download-text">
+      Get started with Alight Motion today and unlock the power of professional video editing on your mobile device.
+    </p>
+    
+    <div class="version-list">
+      <!-- Version 5.2.0 -->
+      <div class="version-card">
+        <div class="version-header">
+          <span class="version-badge">v5.2.0</span>
+          <span class="release-date">March 2024</span>
+        </div>
+        <div class="version-notes">
+          <h3>What's New</h3>
+          <ul>
+            <li>New AI-powered effects and transitions</li>
+            <li>Enhanced performance and stability</li>
+            <li>New premium templates and assets</li>
+            <li>Improved export quality</li>
+          </ul>
+        </div>
+        <div class="download-options">
+          <button class="download-btn" onclick="downloadApp('android', '5.2.0')">
+            <i class="fab fa-android"></i> Download for Android
+          </button>
+          <button class="download-btn" onclick="downloadApp('ios', '5.2.0')">
+            <i class="fab fa-apple"></i> Download for iOS
+          </button>
+        </div>
+      </div>
+
+      <!-- Version 5.1.0 -->
+      <div class="version-card">
+        <div class="version-header">
+          <span class="version-badge">v5.1.0</span>
+          <span class="release-date">February 2024</span>
+        </div>
+        <div class="version-notes">
+          <h3>What's New</h3>
+          <ul>
+            <li>New motion tracking features</li>
+            <li>Advanced color grading tools</li>
+            <li>Performance optimizations</li>
+            <li>New export presets</li>
+          </ul>
+        </div>
+        <div class="download-options">
+          <button class="download-btn" onclick="downloadApp('android', '5.1.0')">
+            <i class="fab fa-android"></i> Download for Android
+          </button>
+          <button class="download-btn" onclick="downloadApp('ios', '5.1.0')">
+            <i class="fab fa-apple"></i> Download for iOS
+          </button>
+        </div>
+      </div>
+
+      <!-- Version 5.0.0 -->
+      <div class="version-card">
+        <div class="version-header">
+          <span class="version-badge">v5.0.0</span>
+          <span class="release-date">January 2024</span>
+        </div>
+        <div class="version-notes">
+          <h3>What's New</h3>
+          <ul>
+            <li>Major UI redesign</li>
+            <li>New timeline features</li>
+            <li>Enhanced audio editing</li>
+            <li>New animation presets</li>
+          </ul>
+        </div>
+        <div class="download-options">
+          <button class="download-btn" onclick="downloadApp('android', '5.0.0')">
+            <i class="fab fa-android"></i> Download for Android
+          </button>
+          <button class="download-btn" onclick="downloadApp('ios', '5.0.0')">
+            <i class="fab fa-apple"></i> Download for iOS
+          </button>
+        </div>
+      </div>
+
+      <!-- Version 4.9.0 -->
+      <div class="version-card">
+        <div class="version-header">
+          <span class="version-badge">v4.9.0</span>
+          <span class="release-date">December 2023</span>
+        </div>
+        <div class="version-notes">
+          <h3>What's New</h3>
+          <ul>
+            <li>New text animation tools</li>
+            <li>Improved layer management</li>
+            <li>New transition effects</li>
+            <li>Bug fixes and improvements</li>
+          </ul>
+        </div>
+        <div class="download-options">
+          <button class="download-btn" onclick="downloadApp('android', '4.9.0')">
+            <i class="fab fa-android"></i> Download for Android
+          </button>
+          <button class="download-btn" onclick="downloadApp('ios', '4.9.0')">
+            <i class="fab fa-apple"></i> Download for iOS
+          </button>
+        </div>
+      </div>
+
+      <!-- Version 4.8.0 -->
+      <div class="version-card">
+        <div class="version-header">
+          <span class="version-badge">v4.8.0</span>
+          <span class="release-date">November 2023</span>
+        </div>
+        <div class="version-notes">
+          <h3>What's New</h3>
+          <ul>
+            <li>New masking tools</li>
+            <li>Enhanced keyframe animation</li>
+            <li>New filter presets</li>
+            <li>Performance improvements</li>
+          </ul>
+        </div>
+        <div class="download-options">
+          <button class="download-btn" onclick="downloadApp('android', '4.8.0')">
+            <i class="fab fa-android"></i> Download for Android
+          </button>
+          <button class="download-btn" onclick="downloadApp('ios', '4.8.0')">
+            <i class="fab fa-apple"></i> Download for iOS
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature-card">
+      <h3>Professional Tools</h3>
+      <p>Access a wide range of professional editing tools and effects</p>
+    </div>
+    <div class="feature-card">
+      <h3>Easy to Use</h3>
+      <p>Intuitive interface designed for both beginners and professionals</p>
+    </div>
+    <div class="feature-card">
+      <h3>Regular Updates</h3>
+      <p>Get new features and improvements with regular updates</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alight Motion | Follow us on 
+      <a href="https://www.instagram.com/tera_bhai_said?igsh=bHpvdWhsaXd1cW45">Instagram</a>
+     <!-- <a href="#">Twitter</a>-->
+    </p>
+  </footer>
+
+  <script>
+    function downloadApp(platform, version) {
+      let downloadUrl;
+      if (platform === 'android') {
+        downloadUrl = `https://play.google.com/store/apps/details?id=com.alightcreative.motion&version=${version}`;
+      } else if (platform === 'ios') {
+        downloadUrl = `https://apps.apple.com/app/alight-motion/id1234567890?version=${version}`;
+      }
+      
+      if (downloadUrl) {
+        window.open(downloadUrl, '_blank');
+      }
+    }
+  </script>
+</body>
+</html> 

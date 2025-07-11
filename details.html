@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alight Motion Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #4b0082;
+      color: #fff;
+    }
+    nav {
+      background-color: #1a1a2e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .details-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #1a1a2e;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .app-image {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      margin: 0 auto 2rem;
+      display: block;
+    }
+    .details-content {
+      color: #ccc;
+      line-height: 1.6;
+    }
+    .details-content h2 {
+      color: #ff4c9b;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .details-content p {
+      margin-bottom: 1rem;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .features-list li:before {
+      content: "•";
+      color: #ff4c9b;
+      position: absolute;
+      left: 0;
+    }
+    .download-btn {
+      display: inline-block;
+      background-color: #ff4c9b;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease;
+    }
+    .download-btn:hover {
+      background-color: #ff2d8a;
+    }
+    .image-gallery {
+      display: flex;
+      overflow-x: hidden;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      padding: 1rem 0;
+      width: 100%;
+    }
+    .gallery-container {
+      display: flex;
+      animation: slide 30s linear infinite;
+      width: 100%;
+    }
+    .gallery-container:hover {
+      animation-play-state: paused;
+    }
+    .gallery-item {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-wrap: nowrap;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      background-color: #2a2a3a;
+      margin: 0;
+      transform-style: preserve-3d;
+      animation: rotate 10s linear infinite;
+    }
+    .gallery-item img {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      background-color: #2a2a3a;
+      padding: 10px;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.10);
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Alight Motion</div>
+    <ul>
+      <li><a href="website.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+  </nav>
+
+  <div class="details-container">
+    <div class="details-content">
+      <h2>Editing Showcase</h2>
+      <div class="image-gallery">
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="./edit7.png" alt="Color Grading">
+          </div>
+          <div class="gallery-item">
+            <img src="./edit3.png" alt="Motion Effects">
+          </div>
+          <div class="gallery-item">
+            <img src="./edit4.png" alt="Text Animation">
+          </div>
+          <div class="gallery-item">
+            <img src="./edit5.png" alt="Visual Effects">
+          </div>
+          <div class="gallery-item">
+            <img src="./edit6.png" alt="Layer Management">
+          </div>
+          <div class="gallery-item">
+            <img src="./edit1.png" alt="Export Options">
+          </div>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 2rem;">Alight Motion Pro Features</h2>
+      <p>Experience professional video editing on your mobile device with Alight Motion Pro. Our premium version offers:</p>
+      <ul class="features-list">
+        <li>🔓 Unlocked All Premium Effects and Transitions</li>
+        <li>🎨 Advanced Color Grading Tools</li>
+        <li>📱 High-Quality Export Options</li>
+        <li>💫 Professional Motion Graphics</li>
+        <li>🎵 Enhanced Audio Editing</li>
+        <li>🔄 Multi-Layer Timeline</li>
+        <li>🎬 Keyframe Animation</li>
+        <li>🖼️ Custom Templates</li>
+        <li>📊 Advanced Masking Tools</li>
+        <li>🎭 Special Effects Library</li>
+      </ul>
+    
+
+      <p> Title: Alite Motion – Not Just an App, It’s a Complete Vibe!
+
+        Bro, let me tell you, this app is like steroids for your creativity.
+        
+        Multiple layers? Yes.
+        
+        Video + Audio + Graphics? The spice mix is all set.
+        
+        Vector editing? On your phone? Are you serious?!
+        
+        More than 160 effects? I haven’t even tried 160 yet and I’m already blown away.
+        
+        Keyframes for everything? I don’t have this much control in my life either.
+        
+        Want to rig characters like Iron Man’s suit? Consider it done.
+        
+        Pan, zoom, focus? Pure director vibes, no cap.<br>
+        
+        Extra spice:<br>
+        
+        Masks, bookmarks, blur, fog, shadow, stroke – This app has more layers than a wedding cake.
+        
+        Export options? MP4, GIF, PNG – Just choose your poison.
+        
+        And fonts? Use your own! I even wrote my friend’s name in Comic Sans just to flex.
+        
+        In short: If you’re not using Elite Motion, what are you doing? Go animate your life, in a badass style.
+        Get started with Alight Motion Pro today and take your video editing to the next level!</p>
+      <a href="download.html" class="download-btn">Download Now</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alight Motion | Follow us on 
+      <a href="https://www.instagram.com/tera_bhai_said?igsh=bHpvdWhsaXd1cW45">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html> 

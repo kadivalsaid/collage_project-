@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #4b0082;
+  color: #fff;
+}
+
+nav {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a.active {
+  background: #ff4c9b;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+/* Login Button Styles */
+.login-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #ff4c9b;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-btn:hover {
+  background-color: #ff4c9b;
+  color: white;
+}
+
+/* Common section styles */
+.section {
+  padding: 3rem;
+  background-color: #111;
+  border-radius: 15px;
+  margin: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #ff4c9b;
+}
+
+.section-content {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* About page styles */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: #1a1a2e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  color: #ff4c9b;
+  margin-bottom: 0.5rem;
+}
+
+/* Movement page styles */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.timeline-item {
+  padding: 1.5rem;
+  background: #1a1a2e;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+}
+
+.timeline-item h3 {
+  color: #ff4c9b;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item .date {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* Contact page styles */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact-info {
+  padding: 2rem;
+  background: #1a1a2e;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+}
+
+.contact-info h3 {
+  color: #ff4c9b;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.contact-form {
+  padding: 2rem;
+  background: #1a1a2e;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-form:hover {
+  transform: translateY(-5px);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Button styles */
+.btn {
+  background-color: #ff4c9b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #ff2d8a;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
+
+footer a {
+  color: #ff4c9b;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav ul {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+} 
